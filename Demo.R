@@ -80,4 +80,12 @@ slidingwindowplot(3000, dengueseq)
 slidingwindowplot(300, dengueseq)
 count(dengueseq, 2)
 count(dengueseq, 1)
+getAnnot(dengueseq)
+annots<-getAnnot(dengueseq)
+annots[1:20]
+choosebank("genbank")
+query("humtRNAs", "SP=homo sapiens AND M=TRNA")
+myseqs <- getSequence(humtRNAs)
+library(Biostrings)
+sigma <- nucleotideSubstitutionMatrix(match = 2, mismatch = -1, baseOnly = TRUE)
 
