@@ -76,5 +76,8 @@ slidingwindowplot <- function(windowsize, inputseq)
 ˓→")
 }
 
-
+slidingwindowplot(3000, dengueseq)
+slidingwindowplot(300, dengueseq)
+count(dengueseq, 2)
+count(dengueseq, 1)
 
