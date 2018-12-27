@@ -88,4 +88,16 @@ query("humtRNAs", "SP=homo sapiens AND M=TRNA")
 myseqs <- getSequence(humtRNAs)
 library(Biostrings)
 sigma <- nucleotideSubstitutionMatrix(match = 2, mismatch = -1, baseOnly = TRUE)
+install.packages("BiocManager")
+BiocManager::install("Biostrings", version = "3.8")
+browseVignettes("Biostrings")
+library(BiocManager)
+globalAligns1s2 <- pairwiseAlignment(s1, s2,
+                                     gapOpening = -2,
+                                     gapExtension = -8, 
+                                     scoreOnly = FALSE)
+globalAligns1s2
+data(BLOSUM50)
+BLOSUM50
+heatmap(BLOSUM50)
 
