@@ -100,4 +100,20 @@ globalAligns1s2
 data(BLOSUM50)
 BLOSUM50
 heatmap(BLOSUM50)
+data(package="Biostrings")
+s3 <- "PAWHEAE"
+s4 <- "HEAGAWGHEE"
+globalAligns3s4 <- pairwiseAlignment(s3, s4, substitutionMatrix = "BLOSUM50",
+gapOpening = -2,
+gapExtension = -8, scoreOnly = FALSE)
+globalAligns3s4
+lepraeseqstring <- c2s(lepraeseq)
+choosebank("refseqViruses")
+query("Dengue1", "AC=NC_001477")
+attributes(Dengue1)
+globalAligns3s4 <- pairwiseAlignment(s3, s4, substitutionMatrix = "BLOSUM50",
+gapOpening = -2,
+gapExtension = -8, scoreOnly = FALSE)
+df9<-query("Dengue1", "AC=NC_001477")
+attributes(df9)
 
