@@ -63,3 +63,79 @@ object="ShortReadQ"
 Function: writeFastq (package ShortRead)
 object="ShortReadQ", file="character"
 object="ShortReadQ", file="FastqFile"
+
+Function: .srValidity (package ShortRead)
+object="ShortRead"
+
+Function: [ (package base)
+x="ShortRead", i="ANY", j="ANY", drop="ANY"
+x="ShortRead", i="ANY", j="missing", drop="ANY"
+x="ShortRead", i="missing", j="ANY", drop="ANY"
+x="ShortRead", i="missing", j="missing", drop="ANY"
+
+Function: alphabetByCycle (package ShortRead)
+stringSet="ShortRead"
+
+Function: append (package BiocGenerics)
+x="ShortRead", values="ShortRead"
+
+Function: clean (package ShortRead)
+object="ShortRead"
+
+Function: coerce (package methods)
+from="ShortReadQ", to="ShortRead"
+
+Function: detail (package Biostrings)
+x="ShortRead"
+
+Function: dustyScore (package ShortRead)
+x="ShortRead"
+
+Function: id (package ShortRead)
+object="ShortRead"
+
+Function: length (package base)
+x="ShortRead"
+
+Function: narrow (package IRanges)
+x="ShortRead"
+
+Function: pairwiseAlignment (package Biostrings)
+pattern="ShortRead", subject="ANY"
+
+Function: show (package methods)
+object="ShortRead"
+
+Function: srdistance (package ShortRead)
+pattern="ShortRead", subject="ANY"
+
+Function: srduplicated (package ShortRead)
+x="ShortRead"
+
+Function: sread (package ShortRead)
+object="ShortRead"
+
+Function: srorder (package ShortRead)
+x="ShortRead"
+
+Function: srrank (package ShortRead)
+x="ShortRead"
+
+Function: srsort (package ShortRead)
+x="ShortRead"
+
+Function: tables (package ShortRead)
+x="ShortRead"
+
+Function: trimEnds (package ShortRead)
+object="ShortRead"
+
+Function: trimLRPatterns (package Biostrings)
+subject="ShortRead"
+
+Function: width (package BiocGenerics)
+x="ShortRead"
+
+Function: writeFasta (package ShortRead)
+object="ShortRead"
+
