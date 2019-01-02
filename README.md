@@ -139,3 +139,28 @@ x="ShortRead"
 Function: writeFasta (package ShortRead)
 object="ShortRead"
 
+
+getClass(".QA2", where=getNamespace("ShortRead"))
+Virtual Class ".QA2" [package "ShortRead"]
+
+No Slots, prototype of class "S4"
+
+Extends: ".ShortReadBase"
+
+Known Subclasses: 
+Class "QASummary", directly
+Class "QACollate", directly
+Class "QA", directly
+Class "QASource", by class "QASummary", distance 2
+Class "QAFlagged", by class "QASummary", distance 2
+Class "QAFiltered", by class "QASummary", distance 2
+Class "QANucleotideUse", by class "QASummary", distance 2
+Class "QAQualityUse", by class "QASummary", distance 2
+Class "QASequenceUse", by class "QASummary", distance 2
+Class "QAReadQuality", by class "QASummary", distance 2
+Class "QAAdapterContamination", by class "QASummary", distance 2
+Class "QAFrequentSequence", by class "QASummary", distance 2
+Class "QANucleotideByCycle", by class "QASummary", distance 2
+Class "QAQualityByCycle", by class "QASummary", distance 2
+Class "QAFastqSource", by class "QASummary", distance 3
+
